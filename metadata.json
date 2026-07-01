@@ -1,0 +1,6 @@
+{
+  "name": "StudyCal",
+  "description": "Một ứng dụng xem lịch cá nhân tích hợp lịch học tập thông minh, giúp quản lý thời khóa biểu, nhiệm vụ, ghi chú học tập và mục tiêu học tập một cách trực quan và khoa học.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
