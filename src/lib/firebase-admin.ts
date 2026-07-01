@@ -1,6 +1,5 @@
 import { getApps, initializeApp } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
-import firebaseConfig from '../../firebase-applet-config.json';
 
 let authInstance: any = null;
 
@@ -11,7 +10,7 @@ export const getAdminAuth = () => {
   if (!apps.length) {
     try {
       initializeApp({
-        projectId: firebaseConfig.projectId,
+        projectId: process.env.VITE_FIREBASE_PROJECT_ID || 'peppy-art-bn56p',
       });
     } catch (err: any) {
       console.warn('⚠️ Warning: Firebase Admin failed to initialize:', err.message);
